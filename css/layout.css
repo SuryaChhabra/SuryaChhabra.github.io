@@ -1004,3 +1004,77 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 #go-top a:hover { background-color: #0F9095; }
 
+/* -------------------------------------------------------------- */
+/* Portfolio Masonry Fix — Non-destructive override               */
+/* -------------------------------------------------------------- */
+
+#portfolio-wrapper {
+    column-count: 3;        /* Number of columns (adjust if needed) */
+    column-gap: 25px;
+}
+
+#portfolio-wrapper .portfolio-item {
+    break-inside: avoid;    /* Prevent items from breaking */
+    -webkit-column-break-inside: avoid;
+    margin-bottom: 25px;
+}
+
+#portfolio-wrapper img {
+    width: 100%;
+    height: auto;           /* Keep natural proportions */
+    display: block;
+}
+
+/* Disable template's old float system for portfolio only */
+#portfolio-wrapper .columns,
+#portfolio-wrapper .portfolio-item {
+    float: none !important;
+    width: auto !important;
+}
+
+/* LAS 101 SECTION MATCH RESUME STYLING */
+#las101 {
+    background: #ffffff !important;
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+/* Section Title ("LAS 101") */
+#las101 .header-col h1 {
+    font: 18px/24px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111 !important; /* same as Resume */
+}
+#las101 .header-col h1 span {
+    border-bottom: 3px solid #11ABB0; /* same underline */
+    padding-bottom: 6px;
+}
+
+/* Subheadings (Story Titles) */
+#las101 h3 {
+    font: 25px/30px 'opensans-bold', sans-serif;
+    color: #313131 !important; 
+    margin-bottom: 6px;
+}
+
+/* Story body text */
+#las101 p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #6E7881 !important; /* same grey as resume text */
+}
+
+/* Remove dark emoji color override (they looked too bold) */
+#las101 h3 span,
+#las101 h3 {
+    color: #313131 !important;
+}
+
+/* Align columns like Resume */
+#las101 .header-col {
+    padding-top: 9px;
+}
+#las101 .main-col {
+    padding-right: 10%;
+}
