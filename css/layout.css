@@ -1078,3 +1078,9 @@ footer .social-links li:first-child { margin-left: 0; }
 #las101 .main-col {
     padding-right: 10%;
 }
+#las101 h4.subtopic {
+   font-size: 16px;
+   color: #777; /* grey */
+   margin-bottom: 12px;
+   font-weight: 600;
+}
